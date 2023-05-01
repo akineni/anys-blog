@@ -15,9 +15,16 @@ redundancy) and clean HTML code.
 and summary)</li>
 <li>Post page</li>
 <li>CDN</li>
+<li>CSS Flexbox</li>
+<li>Sticky header</li>
 <li>Parallax scroll</li>
 <li>Animated scroll to top</li>
 <li>Google map</li>
 <li>Email and call links</li>
 <li>Video</li>
+<li>Pagination</li>
+<li>Social icons</li>
+<li>Live datetime</li>
+<li>Syntax highlighting</li>
+<li>...and lots more</li>
 </ul>
