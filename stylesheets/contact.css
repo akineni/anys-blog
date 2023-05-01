@@ -1,0 +1,499 @@
+/* Author: Akinlonu Eniola Oluwatobi
+ * For: Any's blog template
+*/
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+	font: 16px 'Nunito Sans';
+	color: #787878;
+	background-color: #f5f5f5;
+}
+
+a, a:link, a:visited {
+	color: #0078f0;
+	text-decoration: none;
+}
+
+textarea {
+    padding: 0.625em;
+    resize: none;
+}
+
+
+.right {float: right;}
+
+.left {float: left;}
+
+.bg, #site-nav > div:last-child, #site-srch form {
+    display: -webkit-flex;
+    display: flex;
+}
+
+
+.bg{
+    height: 100%;
+    background-image: url(../img/mac.jpg);
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modal-win {
+    background: rgba(23,23,23,.7);
+    position: fixed;
+	top: 0;
+    height: 100%;
+    z-index: 3;
+	display: none;
+    overflow: auto;
+}
+
+.modal-win .header {
+    background-color: #171717;
+    color: #fff;
+    padding: 20px 10px;
+}
+
+/*button styles */
+
+.btn {
+	border: 1px solid;
+	text-decoration: none;
+	display: inline-block;
+	margin: auto;
+	text-align: center;
+	font-family: Raleway;
+}
+
+.btn-border-rad {border-radius: 5px;}
+
+
+.btn-sm {
+	padding: 0.625em 0.9375em;
+	margin: 0.625em;
+}
+
+.btn-bg {
+	padding: 0.9375em 1.25em;
+	margin: 0.9375em auto;
+	font-size: 18px;
+}
+
+/* end button styles */
+
+
+.close {
+	position: absolute;
+	font-size: 65px;
+    font-weight: bolder;
+	top: 10px;
+	right: 10px;
+	color: #fff;
+    cursor: default;
+}
+
+i.close:hover {color: lightgray;}
+
+
+.field-comp {position: relative;}
+
+.field-comp i.fa {
+	position: absolute;
+	left: 10px;
+	top: calc(50% - (1em/2));
+}
+
+
+
+/* .field, .icon-field-left is now relative to font-size */
+.field, .field-elem {
+	height: 2.5em;
+	padding: 0.625em;
+}
+
+.icon-field-left {padding-left: calc(1em + 15px); /*1em(16px) + 10px(icons left property) + 5px(extra 5px for space on the right)*/}
+
+.form-100 input, .form-100 textarea {width: 100%;}
+
+
+
+.bar .fa {
+	-webkit-transition: -webkit-transform .4s ease-out;
+	transition: transform .4s ease-out;
+}
+
+.bar.maximized .fa {
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+
+
+
+
+
+#map {
+    border: 1px solid #ddd;
+    height: 200px;
+}
+
+
+#contact-btn-grp {
+    margin: auto;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+#contact-btn-grp > div {
+    background-color: rgba(17,17,17,.75);
+    padding: 18px;
+    margin: 10px;
+}
+
+#contact-btn-grp a {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+#contact-btn-grp a:hover {
+    background-color: #fff;
+    color: #787878;
+    border-color: transparent;
+}
+
+#contact-form, #contact-det-cont {
+    margin: auto;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#contact-det-cont div {
+    margin: 10px auto;
+    font-size: 19px;
+}
+
+#contact-det-cont div > * {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: inline-block;
+}
+
+#contact-det-cont div i.fa {
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    padding: 5px;
+}
+
+#contact-det-cont div a:hover{text-decoration: underline;}
+
+#contact-form{width: 90%;}
+#contact-det-cont {max-width: 90%;}
+
+#contact-form, #contact-det-cont {
+    -webkit-animation: zoom-in .5s;
+    -moz-animation: zoom-in .5s;
+    -o-animation: zoom-in .5s;
+	animation: zoom-in .5s;
+}
+
+.container > span {
+    color: #171717;
+    font-size: 15px;
+}
+
+#contact-form a.btn:hover{
+    color: #787878;
+    background-color: #fff;
+}
+
+#contact-form [placeholder]:focus + .fa {color: #ff6464;}
+
+#contact-form .field, #contact-form .field-elem {height: 3.125em;}
+
+#contact-form form > div {margin: 10px 0;}
+
+
+/* search styles */
+
+#site-srch form, .modal-win, #site-srch [placeholder] {width: 100%;}
+
+#site-srch .field-comp i.fa {color: #ff6464}
+
+#site-srch {
+	padding: 10px;
+	font-size: 20px;
+}
+
+#site-srch form {
+	margin: auto;
+	justify-content: center;
+}
+
+#site-srch .field-comp {width: 50%;}
+
+#site-srch [placeholder] {
+	outline: none;
+	border-color: #fff;
+	color: #171717;
+	border-style: solid;
+}
+
+#site-srch [type="submit"] {
+	background-color: #ff6464;
+	color: #fff;
+	border-radius: 0 4px 4px 0;
+	border: 0;
+}
+
+#site-srch [type="submit"]:hover {
+	background-color: lightgray;
+	color: #ff3232;
+}
+
+#site-srch .field, .raleway-nums, #contact-form .field, textarea {font-family: 'Nunito Sans';}
+
+#site-srch [placeholder]:focus + .fa {color: #ff6464;}
+
+	/* placeholder styles */
+
+	#site-srch ::-webkit-input-placeholder{color: lightgray;}
+
+	#site-srch ::-moz-placeholder {color: lightgray;}
+
+	#site-srch :-ms-input-placeholder {color: lightgray;}
+
+	#site-srch :-moz-placeholder {color: lightgray;}
+
+	/* end placeholder styles */
+
+/* end search styles */
+
+
+
+#site-nav ul {list-style: none;}
+
+#site-nav > ul{padding: 0;}
+
+#site-nav > div:last-child {
+	top: 0;
+	right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#site-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+	background-color: transparent;
+	z-index: 2;
+}
+
+#site-header.affixed-obvious {
+	background-color: #fff;
+	border-bottom: 0 outset transparent;
+    -webkit-box-shadow:0 2px 4px 0 rgba(0,0,0,0.16);
+    -moz-box-shadow:0 2px 4px 0 rgba(0,0,0,0.16);
+    box-shadow:0 2px 4px 0 rgba(0,0,0,0.16);
+	-webkit-transition: background-color .3s;
+	transition: background-color .3s;
+    -webkit-animation: header-fixed-dropdown .7s ease-out;
+    -moz-animation: header-fixed-dropdown .7s ease-out;
+    -o-animation: header-fixed-dropdown .7s ease-out;
+	animation: header-fixed-dropdown .7s ease-out;
+}
+
+#site-header.affixed-obvious a {color: #ff6464;}
+
+#site-header.affixed-obvious #site-nav > div:last-child a:hover{
+	color: #fff;
+	background-color: #ff6464;
+}
+
+#site-header a {
+	display: block;
+	padding: 15px;
+	color: #fff;
+}
+
+#site-home, #site-home a {width: 163px;}
+
+#site-nav, #site-home {font-weight: bold;}
+
+
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+	border-top: 1px solid #ddd;
+	text-align: center;
+	padding: 10px;
+    background-color: #ebebeb;
+}
+
+
+
+
+
+@media only screen and (max-width: 836px) {
+    
+    
+    #site-nav {
+        opacity: .95;
+        width: 97%;
+        margin: auto;
+    }
+
+	#site-nav > div:last-child {position: absolute;}
+
+	#site-nav ul:first-child {display: none;}
+
+	#site-nav li:not(:last-child) {border-bottom: 1px dotted #fff;}
+    
+    #site-nav ul a{color: #171717;}
+    
+    #site-nav ul a:hover {
+        padding-left: 12px;
+        border-left: 3px solid #ff6464;
+        color: #ff6464;
+        background-color: #fff;
+    }
+    
+    
+    #site-header.affixed-obvious #site-nav ul a {color: #ff6464;}
+    
+    #site-header.affixed-obvious #site-nav ul a:hover, #site-header.affixed-obvious #site-nav ul a#active {
+        color: #171717;
+        background-color: #eee;
+    }
+    
+    #site-header #site-nav ul {
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+    }
+    
+    #site-header.affixed-obvious.expanded {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -o-animation: none;
+        animation: none;
+    }
+
+	#site-header.affixed-obvious #site-nav li:not(:last-child) {border-bottom: 1px dotted #ccc;}
+    
+    #site-header:not(.affixed-obvious) #site-nav li:not(:last-child) {border-bottom: 1px dotted #bbb; }
+    
+}
+
+
+
+
+
+@media only screen and (max-height: 402px) {
+    
+    #site-header {overflow-y: auto;}
+    
+	#site-header.h402 {height: 100%;}
+
+	#site-header::-webkit-scrollbar {width: 10px;}
+    
+    #site-header::-webkit-scrollbar, #site-header::-webkit-scrollbar-track {background-color: #f5f5f5;}
+
+	#site-header::-webkit-scrollbar-thumb {
+		background-color: #bbb;
+		border-radius: 5px;
+	}
+    
+    #site-header::-webkit-scrollbar-thumb:hover {background-color: #aaa;}
+    
+    #site-header::-webkit-scrollbar-thumb:active {background-color: #888;}
+    
+    #site-header::-webkit-scrollbar-button {background-color: #aaa;}
+    
+    #site-header::-webkit-scrollbar-button:hover {background-color: #ff6464;}
+}
+
+
+
+
+@media only screen and (min-width: 837px) {
+    
+    #contact-form {width: 50%;}
+    
+    #site-nav .bar {display: none;}
+
+	#site-nav ul {margin: 0;}
+
+	#site-nav {
+		justify-content: space-between;
+		flex-grow: 2;
+	}
+
+	#site-nav > ul > li > a:hover, #site-nav > ul > li > a#active {
+		padding-bottom: 12px;
+		border-bottom: 3px solid #fff;
+	}
+    
+    #site-header, #site-nav > ul, #site-nav {
+		display: -webkit-flex !important;
+		display: flex !important;
+	}
+
+	#site-header.affixed-obvious #site-nav > ul > li > a:hover,
+    #site-header.affixed-obvious #site-nav > ul > li > a#active{
+		border-bottom: 3px solid #ff6464;
+		color: gray;
+	}
+    
+    #site-header.affixed-obvious #site-nav > ul > li > a:hover{background: #f5f5f5 url(../img/repeating-linear-gradient.png);}
+    
+    #site-home {flex-grow: 1;}
+}
+
+
+
+@-webkit-keyframes zoom-in {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom-in {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+@-webkit-keyframes header-fixed-dropdown {
+    from {top:-8%;} 
+    to {top:0;}
+}
+
+@keyframes header-fixed-dropdown {
+    from {top:-8%;} 
+    to {top:0;}
+}
+

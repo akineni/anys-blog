@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Any's Blog</title>
+
+		<meta charset="UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Anyboy" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" integrity="sha512-xcDt7DSauTW0phgQwrJ+RJz6k1YqvmatCkkUiOlWYSL2MQ4zjc1xwn+l0SwZAEu79WncTiAJEt+8T6qDdqfizQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		
+		<link rel="stylesheet" href="stylesheets/style.min.css" />
+		<link rel="icon" type="" href="" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<![endif]-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha512-U6K1YLIFUWcvuw5ucmMtT9HH4t0uz3M366qrF5y4vnyH6dgDzndlcGvH/Lz5k8NFh80SN95aJ5rqGZEdaQZ7ZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha512-ahmSZKApTDNd3gVuqL5TQ3MBTj8tL5p2tYV05Xxzcfu6/ecvt1A0j6tfudSGBVuteSoTRMqMljbfdU0g2eDNUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script type="text/javascript" src="scripts/script.min.js"></script>
+
+		<style type="text/css">html,body{height:100%}</style>
+	</head>
+    
+	<body>
+		<div class="bg">
+            <div id="bg-caption">
+                <a href="#" class="btn btn-sm" title="subscribe">Subscribe</a>
+                <a href="#" class="btn btn-sm" id="btn-emph" title="Emphasis-text"><i class="fa fa-download"></i>&nbsp;Emphasis-text here</a>
+            </div>
+        </div>
+		<div id="date-and-time"></div>
+
+		<header id="site-header">
+            <div id="site-home">
+                <a href="index.html"  title="Any's Blog home">ANY'S BLOG</a>
+            </div>
+
+			<nav id="site-nav">
+				<ul>
+					<li><a href="#" title="e-book tutorials">E-BOOKS</a></li>
+					<li><a href="#" title="code snippets">SNIPPETS</a></li>
+					<li><a href="#" title="online tutorials">TUTORIALS</a>
+						<!--ul>
+							<li><a href="#">Link 1</a></li>
+							<li><a href="#">Link 2</a></li>
+							<li><a href="#">Link 3</a></li>
+						</ul-->
+					</li>
+					<li><a href="#" title="video tutorials">VIDEOS</a></li>
+					<li><a href="about.html" title="about us">ABOUT</a></li>
+					<li><a href="contact.html" title="contact us">CONTACT</a></li>
+				</ul>
+                
+				<div>
+					<a href="javascript:void(0)" id="search" title="Live search"><i class="fa fa-search"></i></a>
+					<a href="javascript:void(0)" class="bar" title="Open menu"><i class="fa fa-bars"></i></a>
+				</div>
+			</nav>
+		</header>
+        
+		<div class="container">
+			<div id="side-nav">
+				<div class="nav-sec-head clearfix">Blog Archive (2017) <i title="select archive year" id="select-yr" 
+				class="fa fa-ellipsis-h right"></i>
+					<ul>
+						<li id="year-active"><a href="javascript:void(0)">2017</a></li>
+						<li><a href="javascript:void(0)">2016</a></li>
+						<li><a href="javascript:void(0)">2015</a></li>
+					</ul>
+				</div>
+
+				<ul class="side-nav-list">
+                    <li class="expandable">May (4) <i class="fa fa-angle-down right"></i>
+                        <div class="clearfix"></div>
+						<ul class="side-nav-sublist image-list">
+							<li><a href="post.html">
+									<img src="img/p1.jpeg" alt="" />
+									<div>5 new wireless technologies for today's businesses</div>
+								</a>
+								<div class="item-date"><i class="fa fa-calendar"></i> Sat 06-04-17</div>
+							</li>
+							<li>
+								<a href="post.html">
+									<img src="img/p2.jpg" alt="" />
+									<div>Anyboy's pen on web optimization</div>
+								</a>
+								<div class="item-date"><i class="fa fa-calendar"></i> Tue 02-04-17</div>
+							</li>
+
+							<li>
+								<a href="post.html">
+									<img src="img/p3.jpeg" alt="" />
+									<div>Kwan wing says "Mercedes benz labre is far beyond the concept of emar in china"</div>
+								</a>
+								<div class="item-date"><i class="fa fa-calendar"></i> Tue 02-04-17</div>
+							</li>
+
+							<li>
+								<a href="post.html">
+									<img src="img/p4.jpg" alt="" />
+									<div>Technology: Transition in style</div>
+								</a>
+								<div class="item-date"><i class="fa fa-calendar"></i> Mon 01-04-17</div>
+							</li>
+						</ul>
+					</li>
+
+                    <li class="expandable collapse">April (2) <i class="fa fa-angle-right right"></i>
+                        <div class="clearfix"></div>
+						<ul class="side-nav-sublist image-list">
+							<li><a href="post.html">
+									<img src="img/p1.jpeg" alt="" />
+									<div>5 new wireless technologies for today's businesses</div>
+								</a>
+									<div class="item-date"><i class="fa fa-calendar"></i> Sat 29-03-17</div>
+							</li>
+							<li>
+								<a href="post.html">
+									<img src="img/p2.jpg" alt="" />
+									<div>Anyboy's pen on web optimization</div>
+								</a>
+								<div class="item-date"><i class="fa fa-calendar"></i> Sat 29-03-17</div>
+							</li>
+
+						</ul>
+					</li>
+                    <li class="expandable collapse">March (3) <i class="fa fa-angle-right right"></i>
+                        <div class="clearfix"></div>
+						<ul  class="side-nav-sublist image-list">
+							<li><a href="post.html">
+									<img src="img/p6.jpeg" alt="" />
+									<div>Link 1</div>
+								</a>
+									<div class="item-date"><i class="fa fa-calendar"></i> Sat 29-03-17</div>
+							</li>
+							<li>
+								<a href="post.html">
+									<img src="img/p6.jpeg" alt="" />
+									<div>Link 2</div>
+								</a>
+								<div class="item-date"><i class="fa fa-calendar"></i> Sat 29-03-17</div>
+							</li>
+
+							<li>
+								<a href="post.html">
+									<img src="img/p6.jpeg" alt="" />
+									<div>Link 3</div>
+								</a>
+								<div class="item-date"><i class="fa fa-calendar"></i> Sat 29-03-17</div>
+							</li>
+						</ul>
+					</li>
+					<li class="expandable collapse">Febuary<i class="fa fa-angle-right right"></i>
+                    <div class="clearfix"></div>
+                    </li>
+					<li class="expandable collapse">January<i class="fa fa-angle-right right"></i>
+                    <div class="clearfix"></div>
+                    </li>
+				</ul>
+
+				<div class="nav-sec-head">Categories</div>
+
+				<ul class="side-nav-list">
+					<li class="expandable collapse">Computer programming<i class="fa fa-angle-right right"></i>
+                        <div class="clearfix"></div>
+						<ul class="side-nav-sublist">
+							<li><a href="#">PHP</a></li>
+							<li><a href="#">Javascript</a></li>
+							<li><a href="#">Java</a></li>
+							<li><a href="#">Python</a></li>
+							<li><a href="#">C</a></li>
+							<li><a href="#">HTML & CSS</a></li>
+							<li><a href="#">JSON & XML</a></li>
+							<li><a href="#">AJAX</a></li>
+							<li><a href="#">Jquery</a></li>
+                            <li><a href="#">Others...</a></li>
+						</ul>
+					</li>
+					<li>Web Design & Development</li>
+					<li>Software development</li>
+					<li>How to techs</li>
+				</ul>
+                
+                <img src="img/ad3.jpg" class="ad" />
+			</div>
+			<main>
+                
+                <div class="post">
+					<div class="post-head">
+						<div class="post-detail">Posted by <a href="#">Anyboy</a> on Sunday 14<sup>th</sup> May, 2017 at 10:27:32 AM</div>
+						<h3 class="post-topic">[VIDEO] How to Install Ubuntu on Windows Easily and Dual Boot</h3>
+					</div>
+					<div class="post-body">
+                        
+						<div class="post-summary-txt">
+                            
+                            Follow this link below to watch the video<br /><br /><i class="fa fa-video-camera"></i> 
+                            <a href="#" class="underline-hover">how_to_install_ubuntu_on_windows_easily_and_dual_boot.mp4</a>
+
+							<div class="clearfix">
+                                <div style="margin-bottom: 20px"></div>
+							</div>
+						</div>
+					</div>
+					<div class="post-footr"><!--display flex-->
+						<div class="hit"><!--displayflex-->
+							<span class="like" title="Like">506&nbsp;<i class="fa fa-thumbs-o-up"></i></span>
+							<span class="comment" title="Comment">498&nbsp;<a href="post.html#post-a-cmnt"><i class="fa fa-comments-o"></i></a></span>
+							<div class="ratings-container">Ratings&nbsp;<i class="fa fa-star-o see-ratings" title="toggle show ratings"></i>
+								<table class="ratings">
+									<tr>
+										<td>18955</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+									</tr>
+									<tr>
+										<td>2000</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+									<tr>
+										<td>620</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+									<tr>
+										<td>43</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+									<tr>
+										<td>17</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+								</table>
+
+							</div>
+						</div>
+						<div class="social-icon-grp-sm">
+							<div class="social-icon" title="share on facebook"><i class="fa fa-facebook fb"></i></div>
+							<div class="social-icon" title="share on twitter"><i class="fa fa-twitter twitter"></i></div>
+							<div class="social-icon" title="share on pinterest"><i class="fa fa-pinterest-p pint"></i></div>
+							<div class="social-icon" title="share on instagram"><i class="fa fa-instagram insta"></i></div>
+							<div class="social-icon" title="share on youtube"><i class="fa fa-youtube tube"></i></div>
+							<div class="social-icon" title="share on linkedin"><i class="fa fa-linkedin in"></i></div>
+							<!--div class="social-icon" title="share on other platforms"><i class="fa fa-plus plus"></i></div-->
+						</div>
+
+					</div>
+				</div>
+                
+				
+				<div class="post">
+					<div class="post-head">
+						<div class="post-detail">Posted by <a href="#">Anyboy</a> on Saturday 29<sup>th</sup> April, 2017 at 06:05:03 AM</div>
+						<h3 class="post-topic">5 new wireless technologies for todays businesses</h3>
+					</div>
+					<div class="post-body">
+						<img src="img/p1.jpeg" alt="" />
+						<div class="post-summary-txt">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							<div class="clearfix">
+								<a href="post.html" class="btn btn-sm right clearfix">Read more <i class="fa fa-angle-double-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="post-footr"><!--display flex-->
+						<div class="hit"><!--displayflex-->
+							<span class="like" title="Like">506&nbsp;<i class="fa fa-thumbs-o-up"></i></span>
+							<span class="comment" title="Comment">498&nbsp;<a href="post.html#post-a-cmnt"><i class="fa fa-comments-o"></i></a></span>
+							<div class="ratings-container">Ratings&nbsp;<i class="fa fa-star-o see-ratings" title="toggle show ratings"></i>
+								<table class="ratings">
+									<tr>
+										<td>18955</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+									</tr>
+									<tr>
+										<td>2000</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+									<tr>
+										<td>620</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+									<tr>
+										<td>43</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+									<tr>
+										<td>17</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+								</table>
+
+							</div>
+						</div>
+						<div class="social-icon-grp-sm">
+							<div class="social-icon" title="share on facebook"><i class="fa fa-facebook fb"></i></div>
+							<div class="social-icon" title="share on twitter"><i class="fa fa-twitter twitter"></i></div>
+							<div class="social-icon" title="share on pinterest"><i class="fa fa-pinterest-p pint"></i></div>
+							<div class="social-icon" title="share on instagram"><i class="fa fa-instagram insta"></i></div>
+							<div class="social-icon" title="share on youtube"><i class="fa fa-youtube tube"></i></div>
+							<div class="social-icon" title="share on linkedin"><i class="fa fa-linkedin in"></i></div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="post quote">
+					<div class="post-head">
+						<div class="post-detail">Posted by <a href="#">Anyboy</a> on Saturday 29<sup>th</sup> April, 2017 at 06:05:03 AM</div>
+						<h3 class="post-topic">[QUOTE] Quote of the day</h3>
+					</div>
+					<div class="post-body">
+						<div class="post-summary-txt">
+							Never haste, keep calm and analyse. - <b style="color: #171717">Haste is inefficiency</b><br />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							<div>Sir Any</div>
+						</div>
+					</div>
+					<div class="post-footr">
+						<div class="hit">
+							<span class="like" title="Like">506&nbsp;<i class="fa fa-thumbs-o-up"></i></span>
+							<span class="comment" title="Comment">498&nbsp;<a href="post.html#post-a-cmnt"><i class="fa fa-comments-o"></i></a></span>
+							<div class="ratings-container">Ratings&nbsp;<i class="fa fa-star-o see-ratings" title="toggle show ratings"></i>
+								<table class="ratings">
+									<tr>
+										<td>18955</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+									</tr>
+									<tr>
+										<td>2000</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+									<tr>
+										<td>620</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+									<tr>
+										<td>43</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+									<tr>
+										<td>17</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+								</table>
+
+							</div>
+						</div>
+						<div class="social-icon-grp-sm">
+							<div class="social-icon" title="share on facebook"><i class="fa fa-facebook fb"></i></div>
+							<div class="social-icon" title="share on twitter"><i class="fa fa-twitter twitter"></i></div>
+							<div class="social-icon" title="share on pinterest"><i class="fa fa-pinterest-p pint"></i></div>
+							<div class="social-icon" title="share on instagram"><i class="fa fa-instagram insta"></i></div>
+							<div class="social-icon" title="share on youtube"><i class="fa fa-youtube tube"></i></div>
+							<div class="social-icon" title="share on linkedin"><i class="fa fa-linkedin in"></i></div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="post">
+					<div class="post-head">
+						<div class="post-detail">Posted by <a href="#">Anyboy</a> on Saturday 29<sup>th</sup> April, 2017 at 06:05:03 AM</div>
+						<h3 class="post-topic">Anyboy's pen on web optimization</h3>
+					</div>
+					<div class="post-body">
+						<img src="img/p2.jpg" alt="" />
+						<div class="post-summary-txt">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							<div class="clearfix">
+								<a href="post.html" class="btn btn-sm right clearfix">Read more <i class="fa fa-angle-double-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="post-footr">
+						<div class="hit">
+							<span class="like" title="Like">506&nbsp;<i class="fa fa-thumbs-o-up"></i></span>
+							<span class="comment" title="Comment">498&nbsp;<a href="post.html#post-a-cmnt"><i class="fa fa-comments-o"></i></a></span>
+							<div class="ratings-container">Ratings&nbsp;<i class="fa fa-star-o see-ratings" title="toggle show ratings"></i>
+								<table class="ratings">
+									<tr>
+										<td>18955</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+									</tr>
+									<tr>
+										<td>2000</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+									<tr>
+										<td>620</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+									<tr>
+										<td>43</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+									<tr>
+										<td>17</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+								</table>
+
+							</div>
+						</div>
+						<div class="social-icon-grp-sm">
+							<div class="social-icon" title="share on facebook"><i class="fa fa-facebook fb"></i></div>
+							<div class="social-icon" title="share on twitter"><i class="fa fa-twitter twitter"></i></div>
+							<div class="social-icon" title="share on pinterest"><i class="fa fa-pinterest-p pint"></i></div>
+							<div class="social-icon" title="share on instagram"><i class="fa fa-instagram insta"></i></div>
+							<div class="social-icon" title="share on youtube"><i class="fa fa-youtube tube"></i></div>
+							<div class="social-icon" title="share on linkedin"><i class="fa fa-linkedin in"></i></div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="post">
+					<div class="post-head">
+						<div class="post-detail">Posted by <a href="#">Anyboy</a> on Saturday 29<sup>th</sup> April, 2017 at 06:05:03 AM</div>
+						<h3 class="post-topic">Kwan wing says "Mercedes benz labre is far beyond the concept of emar in china"</h3>
+					</div>
+					<div class="post-body">
+						<img src="img/p3.jpeg" alt="" />
+						<div class="post-summary-txt">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							<div class="clearfix">
+								<a href="post.html" class="btn btn-sm right clearfix">Read more <i class="fa fa-angle-double-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="post-footr">
+						<div class="hit">
+							<span class="like" title="Like">506&nbsp;<i class="fa fa-thumbs-o-up"></i></span>
+							<span class="comment" title="Comment">498&nbsp;<a href="post.html#post-a-cmnt"><i class="fa fa-comments-o"></i></a></span>
+							<div class="ratings-container">Ratings&nbsp;<i class="fa fa-star-o see-ratings" title="toggle show ratings"></i>
+								<table class="ratings">
+									<tr>
+										<td>18955</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+									</tr>
+									<tr>
+										<td>2000</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+									<tr>
+										<td>620</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+									<tr>
+										<td>43</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+									<tr>
+										<td>17</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+								</table>
+
+							</div>
+						</div>
+						<div class="social-icon-grp-sm">
+							<div class="social-icon" title="share on facebook"><i class="fa fa-facebook fb"></i></div>
+							<div class="social-icon" title="share on twitter"><i class="fa fa-twitter twitter"></i></div>
+							<div class="social-icon" title="share on pinterest"><i class="fa fa-pinterest-p pint"></i></div>
+							<div class="social-icon" title="share on instagram"><i class="fa fa-instagram insta"></i></div>
+							<div class="social-icon" title="share on youtube"><i class="fa fa-youtube tube"></i></div>
+							<div class="social-icon" title="share on linkedin"><i class="fa fa-linkedin in"></i></div>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="post">
+					<div class="post-head">
+						<div class="post-detail">Posted by <a href="#">Anyboy</a> on Saturday 29<sup>th</sup> April, 2017 at 06:05:03 AM</div>
+						<h3 class="post-topic">Technology: transition in style</h3>
+					</div>
+					<div class="post-body">
+						<img src="img/p4.jpg" alt="" />
+						<div class="post-summary-txt">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							<div class="clearfix">
+								<a href="post.html" class="btn btn-sm right clearfix">Read more <i class="fa fa-angle-double-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="post-footr">
+						<div class="hit">
+							<span class="like" title="Like">506&nbsp;<i class="fa fa-thumbs-o-up"></i></span>
+							<span class="comment" title="Comment">498&nbsp;<a href="post.html#post-a-cmnt"><i class="fa fa-comments-o"></i></a></span>
+							<div class="ratings-container">Ratings&nbsp;<i class="fa fa-star-o see-ratings" title="toggle show ratings"></i>
+								<table class="ratings">
+									<tr>
+										<td>18955</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+									</tr>
+									<tr>
+										<td>2000</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+									<tr>
+										<td>620</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+									<tr>
+										<td>43</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+									<tr>
+										<td>17</td>
+										<td><i class="fa fa-star-o rate-active"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+										<td><i class="fa fa-star-o"></i></td>
+									</tr>
+								</table>
+
+							</div>
+						</div>
+						<div class="social-icon-grp-sm">
+							<div class="social-icon" title="share on facebook"><i class="fa fa-facebook fb"></i></div>
+							<div class="social-icon" title="share on twitter"><i class="fa fa-twitter twitter"></i></div>
+							<div class="social-icon" title="share on pinterest"><i class="fa fa-pinterest-p pint"></i></div>
+							<div class="social-icon" title="share on instagram"><i class="fa fa-instagram insta"></i></div>
+							<div class="social-icon" title="share on youtube"><i class="fa fa-youtube tube"></i></div>
+							<div class="social-icon" title="share on linkedin"><i class="fa fa-linkedin in"></i></div>
+						</div>
+
+					</div>
+				</div>
+
+				<div id="btm-nav">
+				<a href="#" class="btn btn-sm"><i class="fa fa-angle-double-left"></i> Next</a>
+					
+					<div class="pagination">
+						<a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">7</a><a href="#">10</a><a href="#">15</a><a href="#">20</a><a href="#">30</a>
+
+					</div>
+					<a href="#" class="btn btn-sm">Prev <i class="fa fa-angle-double-right"></i>
+                    </a>
+				</div>
+
+			</main>
+			<aside>
+				
+				<div class="nav-sec-head">Popular posts <i id="toggle-pop" title="toggle show Popular posts" class="fa fa-minus-circle right"></i><div class="clearfix"></div></div>
+				<ul class="side-nav-list image-list">
+
+					<li>
+						<a href="post.html">
+							<img src="img/p4.jpg" alt="" />
+							<div>Technology: Transition in style</div>
+						</a>
+						<div class="item-date"><i class="fa fa-calendar"></i> Mon 01-04-17</div>
+					</li>
+
+					<li>
+						<a href="post.html">
+							<img src="img/p2.jpg" alt="" />
+							<div>Anyboy's pen on web optimization</div>
+						</a>
+						<div class="item-date"><i class="fa fa-calendar"></i> Wed 22-03-17</div>
+					</li>
+					
+					<li><a href="post.html">
+							<img src="img/p1.jpeg" alt="" />
+							<div>5 new wireless technologies for today's businesses</div>
+						</a>
+							<div class="item-date"><i class="fa fa-calendar"></i> Tue 21-03-16</div>
+					</li>
+
+					<li>
+						<a href="post.html">
+							<img src="img/p5.jpeg" alt="" />
+							<div>Does military technology really make us safer?</div>
+						</a>
+						<div class="item-date"><i class="fa fa-calendar"></i> Mon 13-02-17</div>
+					</li>
+					
+					<li>
+						<a href="post.html">
+							<img src="img/p3.jpeg" alt="" />
+							<div>Kwan wing says "Mercedes benz labre is far beyond the concept of emar in china"</div>
+						</a>
+						<div class="item-date"><i class="fa fa-calendar"></i> Tue 10-01-17</div>
+					</li>
+				</ul>
+
+				<div class="nav-sec">
+					Like and follow <a href="#" class="underline-hover">Any's Blog</a> today<hr />
+					<!--div--><div class="social-icon-grp-md follow">
+						<!--div>
+							<i class="fa fa-facebook"></i> <span>anysblog</span>
+						</div>
+
+						<div>
+							<i class="fa fa-twitter"></i> <span>anysblog</span>
+						</div>
+
+						<div>
+							<i class="fa fa-pinterest-p"></i> <span>anysblog</span>
+						</div>
+
+						<div>
+							<i class="fa fa-instagram"></i> <span>anysblog</span>
+						</div>
+
+						<div>
+							<i class="fa fa-youtube"></i> <span>anysblog</span>
+						</div>
+
+						<div>
+							<i class="fa fa-linkedin"></i> <span>anysblog</span>
+						</div-->
+						<div class="social-icon" title="facebook"><span class="zoom-in fb"></span><i class="fa fa-facebook"></i></div>
+						<div class="social-icon" title="twitter"><span class="zoom-in twitter"></span><i class="fa fa-twitter"></i></div>
+						<div class="social-icon" title="pinterest"><span class="zoom-in pint"></span><i class="fa fa-pinterest-p"></i></div>
+						<div class="social-icon" title="instagram"><span class="zoom-in insta"></span><i class="fa fa-instagram"></i></div>
+						<div class="social-icon" title="youtube"><span class="zoom-in tube"></span><i class="fa fa-youtube"></i></div>
+						<div class="social-icon" title="linkedin"><span class="zoom-in in"></span><i class="fa fa-linkedin"></i></div-->
+						
+					</div>
+				</div>
+
+				<div class="nav-sec">
+					<div class="nav-sec-head" id="suscribe-nav-sec-head">Subscribe</div>
+					Enter your e-mail below and get notified on our latest blogposts
+					<form class="form-100">
+						<div class="field-comp">
+							<input name="Any" type="email" class="field icon-field-left" placeholder="a@m.n" />
+							<i class="fa fa-envelope-o" style="color: #787878;"></i>
+						</div>
+						<input type="submit" value="Submit" class="field-elem" />
+					</form>
+
+				</div>
+				
+				<img src="img/ad4.gif" class="ad" />
+				<img src="img/ad5.jpg" class="ad" />
+			</aside>
+		</div>
+		<div id="footer">
+			Copyright &copy; 2017 Anyboy
+		</div>
+
+
+		<div id="toggle-scroll">
+
+			<div class="scroll" id="scroll-up" title="scroll to top">
+				<i class="fa fa-angle-up"></i>
+			</div>
+
+			<div class="scroll" id="scroll-down" title="scroll to bottom">
+				<i class="fa fa-angle-down"></i>
+			</div>
+
+		</div>
+
+
+		<div id="site-srch">
+			<i title="close" class="close">&times;</i>
+
+			<form action="search.php">
+				<div class="field-comp">
+					<input class="field icon-field-left" placeholder="Search this website" autofocus /><i class="fa fa-search"></i>
+				</div>
+				<input class="field-elem" type="submit" value="Search" />
+			</form>
+		</div>
+
+	</body>
+</html>
