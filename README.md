@@ -1,6 +1,6 @@
 # anys-blog
 
-Static blog webpages like WordPress
+Responsive static blog webpages like WordPress
 and blogspot created by me. This is
 perfectly HTML and raw CSS (without any
 framework, built from scratch).
@@ -26,5 +26,6 @@ and summary)</li>
 <li>Social icons</li>
 <li>Live datetime</li>
 <li>Syntax highlighting</li>
+<li>CSS Animations</li>
 <li>...and lots more</li>
 </ul>
