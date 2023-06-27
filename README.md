@@ -16,6 +16,7 @@ and summary)</li>
 <li>Post page</li>
 <li>CDN</li>
 <li>CSS Flexbox</li>
+<li>CSS @media queries</li>
 <li>Sticky header</li>
 <li>Parallax scroll</li>
 <li>Animated scroll to top</li>
